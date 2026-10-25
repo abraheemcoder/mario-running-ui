@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100dvh;
+  background-color: black;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 90%;
+  height: 90dvh;
+  background-image: url("./assets/mario-bg.webp");
+  background-position: center;
+  background-size: auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  width: 140px;
+  aspect-ratio: 1;
+  position: absolute;
+  bottom: calc(90dvh - 460px);
+  animation-name: mario-running;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mario-running {
+  from {
+    translate: -15dvw;
+  }
+  to {
+    translate: 90dvw;
+  }
+}
