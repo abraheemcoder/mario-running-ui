@@ -14,6 +14,7 @@ body {
 
 .container {
   width: 90%;
+  max-width: 1800px;
   height: 90dvh;
   background-image: url("./assets/mario-bg.webp");
   background-position: center;
@@ -28,7 +29,7 @@ img {
   width: 140px;
   aspect-ratio: 1;
   position: absolute;
-  bottom: calc(90dvh - 460px);
+  bottom: 100px;
   animation-name: mario-running;
   animation-duration: 3s;
   animation-timing-function: linear;
